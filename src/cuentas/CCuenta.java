@@ -34,9 +34,9 @@ public class CCuenta {
     public void retirar(double cantidad) throws Exception
     {
         if (cantidad <= 0)
-            throw new Exception ("No se puede retirar una cantidad negativa");
+            throw new Exception ("No se puede retirar una cantidad negativa.");
         if (estado()< cantidad)
-            throw new Exception ("No se hay suficiente saldo");
+            throw new Exception ("No se hay suficiente saldo.");
         setSaldo(getSaldo() - cantidad);
     }
 
